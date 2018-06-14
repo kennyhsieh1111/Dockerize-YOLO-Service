@@ -1,0 +1,165 @@
+body {
+    background-color: #191414;
+}
+
+h1 {
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4vw;
+    color: rgb(11, 185, 104);
+}
+
+form {
+    text-align:center;
+    color: #1db954;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: auto;
+    margin: 0 auto;
+}
+  
+.card_left{
+    position: relative;
+    width: 40%;
+    float: left;
+    margin-left: 8%;
+}
+
+.card_right{
+    position: relative;
+    width: 40%;
+    float: right;
+    margin-right: 8%;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border: solid #3a3131 2px;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+/*Input file button*/
+.inputfile + label {
+    font-size: 1.25vw;
+    color: white;
+    background-color: #191414;
+    -webkit-border-radius: 34;
+    -moz-border-radius: 34;
+    border-radius: 28px;
+    border: solid #444747 2px;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    color: rgb(11, 185, 104);
+    border: solid #5a5e5e 2px;
+}
+
+
+/*Upload button*/
+.btn_up {
+    -webkit-border-radius: 34;
+    -moz-border-radius: 34;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 1.25vw;
+    background: #191414;
+    padding: 10px 20px 10px 20px;
+    border: solid #444747 2px;
+    text-decoration: none;
+    margin-left: 2em;
+    margin-right: 3%;
+}
+  
+.btn_up:hover {
+    text-decoration: none;
+    color: rgb(11, 185, 104);
+    border: solid #5a5e5e 2px;
+}
+
+.label {
+    text-align:center;
+    color: #1db954;
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+.footer_text {
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(11, 185, 104);
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+.footer_img {
+    display: inline;
+    width: auto;
+    height: 25px;
+    border: solid #5a5e5e 0px;
+}
+
+.swal-overlay {
+    background-color: rgba(4, 26, 21, 0.45);
+}
+
+
+.loader:after {
+    position: absolute;
+    top: 0;
+    content: '';
+  }
+  .loader:before {
+    left: -1.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  .loader:after {
+    left: 1.5em;
+  }
+  @-webkit-keyframes load1 {
+    0%,
+    80%,
+    100% {
+      box-shadow: 0 0;
+      height: 4em;
+    }
+    40% {
+      box-shadow: 0 -2em;
+      height: 5em;
+    }
+  }
+  @keyframes load1 {
+    0%,
+    80%,
+    100% {
+      box-shadow: 0 0;
+      height: 4em;
+    }
+    40% {
+      box-shadow: 0 -2em;
+      height: 5em;
+    }
+  }

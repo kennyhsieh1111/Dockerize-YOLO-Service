@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style_pra.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<div class="loader">Loading...
+
+<body>
+  <title>YOLO Object Detection</title>
+  <h1>YOLO Object Detection Service</h1>
+
+  <form method=post enctype=multipart/form-data>
+    <input type="file" name="file" id="file" class="inputfile"/>
+    <label for="file">Choose a file</label>
+    <input type=submit value=Upload class="btn_up">
+  </form>
+
+  <br><br>
+  <div class="container">
+    <div class="card_left">
+      <img src="img1.jpg"> 
+    </div>  
+    <div class="card_right">
+      <img src="img1.jpg"> 
+    </div>
+  </div>  
+
+  <script>
+    var ctr = "People Tie Teacher"
+
+    if (typeof ctr !== 'undefined'){
+      swal({
+        title: String(ctr),
+        icon: "success",});}
+  </script>
+
+  <p class='footer_text'>Powered by <img src='docker.png' class='footer_img'></p>
+</body>
+
+</div>

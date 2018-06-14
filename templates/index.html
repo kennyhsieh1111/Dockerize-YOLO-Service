@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_v2.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</head>
+
+<body>
+  <title>YOLO Object Detection</title>
+  <h1>YOLO Object Detection Service</h1>
+
+  <form method=post enctype=multipart/form-data>
+    <input type="file" name="file" id="file" class="inputfile"/>
+    <label for="file">Choose an image</label>
+    <input type=submit value=Upload class="btn_up">
+  </form>
+
+  <br><br><br>
+  <div class="container">
+    <div class="card_left">
+      <img src="{{ upload_image }}"> 
+    </div>  
+    <div class="card_right">
+      <img src="{{ detect_image }}"> 
+    </div> 
+  </div>
+
+  <script>
+      var label_class = '{{ label_class }}';
+      var label_len = '{{ label_len }}';
+  
+      if (label_class.length != 0){
+        swal({
+          title: String(label_len) + " Object Class Detected !",
+          text: String(label_class),
+          icon: "success",});}
+  </script>
+
+  <br>
+  <p class="footer_text">Powered by <img src="{{ url_for('static', filename='docker.png') }}" class='footer_img'><br>Kenny Hsieh</p>
+</body>
